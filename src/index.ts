@@ -1,3 +1,11 @@
+export interface ColorTheme {
+  lighter?: string;
+  light?: string;
+  DEFAULT: string;
+  dark?: string;
+  darker?: string;
+}
+
 /**
  * The default text color
  */
@@ -70,3 +78,4 @@ export const colorPrimaryGreen = {
 export const colorPrimaryRed = {
   DEFAULT: "#c14344",
 };
+
