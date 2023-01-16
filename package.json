@@ -1,17 +1,17 @@
 {
-  "name": "ts-template",
+  "name": "@bernankez/theme",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.12.0",
-  "description": "",
+  "description": "Cole's theme preset",
   "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/bernankez/TSTemplate#readme",
+  "homepage": "https://github.com/bernankez/theme#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bernankez/TSTemplate.git"
+    "url": "git+https://github.com/bernankez/theme.git"
   },
-  "bugs": "https://github.com/bernankez/TSTemplate/issues",
+  "bugs": "https://github.com/bernankez/theme/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -19,7 +19,8 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./dist/theme.css": "./dist/theme.module.css"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -51,18 +52,18 @@
   },
   "devDependencies": {
     "@bernankez/eslint-config": "^0.1.0",
-    "@types/node": "^18.7.19",
+    "@types/node": "^18.11.18",
     "bumpp": "^8.2.1",
-    "changelogithub": "^0.12.4",
-    "eslint": "^8.24.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
+    "changelogithub": "^0.12.7",
+    "eslint": "^8.32.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "rimraf": "^3.0.2",
-    "taze": "^0.8.1",
-    "tsx": "^3.9.0",
-    "typescript": "^4.8.3",
+    "taze": "^0.8.5",
+    "tsx": "^3.12.2",
+    "typescript": "^4.9.4",
     "unbuild": "^0.8.11",
-    "vite": "^3.1.3",
+    "vite": "^4.0.4",
     "vitest": "^0.23.4"
   },
   "lint-staged": {
