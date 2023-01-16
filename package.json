@@ -20,7 +20,12 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs"
     },
-    "./dist/theme.css": "./dist/theme.module.css"
+    "./css": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/css/index.cjs",
+      "import": "./dist/css/index.mjs"
+    },
+    "./theme.css": "./dist/css/theme.module.css"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
