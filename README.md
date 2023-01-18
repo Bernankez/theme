@@ -2,6 +2,10 @@
 
 ## WIP
 
+known issue: has problem on windows
+
+todo: complete README
+
 ## Naming Rules
 
 **&#96;themeType&#96;&#96;[dark]&#96;&#96;styleType&#96;&#96;[themeSeries]&#96;**
