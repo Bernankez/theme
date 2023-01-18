@@ -1,4 +1,4 @@
-import { existsSync, mkdir, readdir, readdirSync, rmdirSync, stat, statSync, unlinkSync, writeFileSync } from "node:fs";
+import { existsSync, mkdir, readdirSync, rmdirSync, statSync, unlinkSync, writeFileSync } from "node:fs";
 
 export function kebabCase(str: string) {
   let temp = str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
@@ -19,7 +19,7 @@ export async function writeCode(filePath: string, code: string) {
   const dir = temp.join("/");
   // console.log("exists", existsSync(dir));
   if (!existsSync(dir)) {
-    const task = await new Promise<boolean>((resolve, reject) => {
+    const task = await new Promise<boolean>((resolve, _reject) => {
       mkdir(dir, (err) => {
         if (err) {
           console.log(err);

@@ -19,7 +19,7 @@ export async function generateCSSIndex() {
   const blocks = Object.entries(_themes).map((theme) => {
     const [name, value] = theme;
     return `export const ${name} = {
-${Object.entries(value).map(([level, color]) => `  ${level}: "var(${names(name, level)})",`).join("\n")}
+${Object.entries(value).map(([level, _color]) => `  ${level}: "var(${names(name, level)})",`).join("\n")}
 };`;
   });
 
