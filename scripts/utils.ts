@@ -17,7 +17,6 @@ export async function writeCode(filePath: string, code: string) {
   const temp = filePath.split("/");
   temp.pop();
   const dir = temp.join("/");
-  // console.log("exists", existsSync(dir));
   if (!existsSync(dir)) {
     const task = await new Promise<boolean>((resolve, _reject) => {
       mkdir(dir, (err) => {
