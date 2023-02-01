@@ -15,6 +15,7 @@ export function names(theme: string, level: string) {
 
 export async function writeCode(filePath: string, code: string) {
   // get dirpath
+  // adapt to windows
   const temp = normalize(filePath).replace(/\\/g, "/").split("/");
   temp.pop();
   const dir = temp.join("/");

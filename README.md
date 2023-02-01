@@ -12,6 +12,44 @@ eg.
 
 ---
 
+## Usage
+
+### Use with js only
+
+Import `@bernankez/theme` where you want to use theme color.
+
+```js
+// named import
+import { colorDefault, colorPrimaryGreen } from "@bernankez/theme";
+// default import
+import * as theme from "@bernankez/theme";
+```
+
+### Use with CSS vars
+
+Import `@bernankez/theme/theme.css` in `main.js`
+```js
+import "@bernankez/theme/theme.css";
+```
+
+CSS variables will be injected into `:root`
+
+```css
+:root {
+  --color-default-dark: somecolor;
+  /* ... */
+}
+```
+
+You can also use in js.
+
+```js
+import { colorDefault } from "@bernankez/theme/css";
+
+console.log(colorDefault.DEFAULT);
+// var(--color-default)
+```
+
 ## Color Priview
 
 ### ![colorDefault](https://img.shields.io/badge/-colorDefault-%2327272A)
