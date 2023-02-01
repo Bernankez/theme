@@ -1,4 +1,5 @@
 import { existsSync, mkdir, readdirSync, rmdirSync, statSync, unlinkSync, writeFileSync } from "node:fs";
+import { normalize } from "node:path";
 
 export function kebabCase(str: string) {
   let temp = str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
@@ -14,7 +15,7 @@ export function names(theme: string, level: string) {
 
 export async function writeCode(filePath: string, code: string) {
   // get dirpath
-  const temp = filePath.split("/");
+  const temp = normalize(filePath).replace(/\\/g, "/").split("/");
   temp.pop();
   const dir = temp.join("/");
   if (!existsSync(dir)) {
