@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "build": "vue-tsc && vite build --base /theme/",
+    "preview": "vite preview --base /theme/"
   },
   "dependencies": {
     "@bernankez/theme": "workspace:^0.1.2",
