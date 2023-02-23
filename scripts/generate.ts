@@ -1,7 +1,7 @@
 import { resolve } from "path";
+import { removeSync } from "fs-extra";
 import { generateCSSIndex } from "./generate-css-index";
 import { generateCSS } from "./generate-css";
-import { deleteDir } from "./utils";
 
 export async function generate() {
   const cssVars = await generateCSSIndex();
@@ -9,5 +9,5 @@ export async function generate() {
 }
 
 export function cleanup() {
-  deleteDir(resolve(process.cwd(), "./src/css"));
+  removeSync(resolve(process.cwd(), "./src/css"));
 }

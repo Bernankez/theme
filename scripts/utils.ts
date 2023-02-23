@@ -1,5 +1,5 @@
-import { existsSync, mkdir, readdirSync, rmdirSync, statSync, unlinkSync, writeFileSync } from "node:fs";
 import { normalize } from "node:path";
+import { ensureDirSync, writeFileSync } from "fs-extra";
 
 export function kebabCase(str: string) {
   let temp = str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
@@ -19,56 +19,6 @@ export async function writeCode(filePath: string, code: string) {
   const temp = normalize(filePath).replace(/\\/g, "/").split("/");
   temp.pop();
   const dir = temp.join("/");
-  if (!existsSync(dir)) {
-    const task = await new Promise<boolean>((resolve, _reject) => {
-      mkdir(dir, (err) => {
-        if (err) {
-          console.log(err);
-          resolve(false);
-        } else {
-          resolve(true);
-        }
-      });
-    });
-    if (!task) {
-      console.error("Failed to create folder");
-      return false;
-    }
-  }
+  ensureDirSync(dir);
   writeFileSync(filePath, code, { encoding: "utf-8" });
-}
-
-export function deleteFile(filePath: string) {
-  if (existsSync(filePath)) {
-    unlinkSync(filePath);
-  }
-}
-
-export function deleteDir(dirPath: string, options?: { deleteFiles?: boolean }) {
-  const { deleteFiles = true } = options || {};
-  if (existsSync(dirPath) && statSync(dirPath).isDirectory()) {
-    const files = readdirSync(dirPath);
-    if (files.length > 0) {
-      if (deleteFiles) {
-        function del(path: string) {
-          const files = readdirSync(path);
-          for (const file of files) {
-            const curPath = `${path}/${file}`;
-            if (statSync(curPath).isDirectory()) {
-              del(curPath);
-            } else {
-              deleteFile(curPath);
-            }
-          }
-        }
-        del(dirPath);
-      } else {
-        console.error("Failed to delete dir, dirPath is not empty");
-        return false;
-      }
-    }
-    rmdirSync(dirPath);
-  } else {
-    console.error("Failed to delete dir, dirPath is not a directory");
-  }
 }
