@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/@bernankez/theme?color=green&label=npm)](https://www.npmjs.com/package/@bernankez/theme)
 [![CI](https://github.com/Bernankez/theme/workflows/CI/badge.svg)](https://github.com/Bernankez/theme/actions)
-[![LICENSE](https://shields.io/github/license/Bernankez/visitor-badge)](https://github.com/Bernankez/visitor-badge/blob/master/LICENSE)
+[![LICENSE](https://shields.io/github/license/Bernankez/theme)](https://github.com/Bernankez/theme/blob/master/LICENSE)
 
 ## Naming Rules (Temporary)
 
