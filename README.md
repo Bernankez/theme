@@ -1,5 +1,9 @@
 # 🎨 Cole's theme preset
 
+[![npm](https://img.shields.io/npm/v/@bernankez/theme?color=green&label=npm)](https://www.npmjs.com/package/@bernankez/theme)
+[![CI](https://github.com/Bernankez/theme/workflows/CI/badge.svg)](https://github.com/Bernankez/theme/actions)
+[![LICENSE](https://shields.io/github/license/Bernankez/visitor-badge)](https://github.com/Bernankez/visitor-badge/blob/master/LICENSE)
+
 ## Naming Rules (Temporary)
 
 **&#96;themeType&#96; &#96;[dark]&#96; &#96;styleType&#96; &#96;[themeSeries]&#96;**
