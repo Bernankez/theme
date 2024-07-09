@@ -9,7 +9,7 @@
     "preview": "vite preview --base /theme/"
   },
   "dependencies": {
-    "@bernankez/theme": "workspace:^0.1.2",
+    "@bernankez/theme": "workspace:*",
     "vue": "^3.2.45"
   },
   "devDependencies": {
