@@ -1,0 +1,85 @@
+{
+  "version": 0,
+  "name": "keke.cc",
+  "theme": {
+    "colors": {
+      "background": {
+        "light": "#F5F5F5",
+        "dark": "#27272A"
+      },
+      "foreground": {
+        "light": "#0a0a0a",
+        "dark": "#fffbf0"
+      },
+      "primary": {
+        "light": "#c14344",
+        "dark": "#b74041"
+      },
+      "primaryForeground": {
+        "light": "#fafafa",
+        "dark": "#fafafa"
+      },
+      "secondary": {
+        "light": "#e3e3e3",
+        "dark": "#333333"
+      },
+      "secondaryForeground": {
+        "light": "#171717",
+        "dark": "#fafafa"
+      },
+      "accent": {
+        "light": "#e3e3e3",
+        "dark": "#333333"
+      },
+      "accentForeground": {
+        "light": "#171717",
+        "dark": "#fafafa"
+      },
+      "muted": {
+        "light": "#e3e3e3",
+        "dark": "#333333"
+      },
+      "mutedForeground": {
+        "light": "#737373",
+        "dark": "#fafafa"
+      },
+      "border": {
+        "light": "#e5e7eb",
+        "dark": "#e5e7eb"
+      },
+      "info": {
+        "light": "#1e6ce1",
+        "dark": "#1e6ce1"
+      },
+      "infoForeground": {
+        "light": "#ffffff",
+        "dark": "#ffffff"
+      },
+      "success": {
+        "light": "#18a058",
+        "dark": "#18a058"
+      },
+      "successForeground": {
+        "light": "#ffffff",
+        "dark": "#ffffff"
+      },
+      "warning": {
+        "light": "#ff9933",
+        "dark": "#ff9933"
+      },
+      "warningForeground": {
+        "light": "#ffffff",
+        "dark": "#ffffff"
+      },
+      "error": {
+        "light": "#f05358",
+        "dark": "#f05358"
+      },
+      "errorForeground": {
+        "light": "#ffffff",
+        "dark": "#ffffff"
+      }
+    },
+    "radius": "0.5rem"
+  }
+}
