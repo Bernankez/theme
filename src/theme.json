@@ -36,8 +36,8 @@
         "dark": "#fafafa"
       },
       "muted": {
-        "light": "#D4D4D4",
-        "dark": "#3a3a3a"
+        "light": "#e3e3e3",
+        "dark": "#333333"
       },
       "mutedForeground": {
         "light": "#737373",
