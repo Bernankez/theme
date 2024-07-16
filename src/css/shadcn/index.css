@@ -21,7 +21,7 @@
   --radius: 0.5rem;
 }
 
-:root .dark {
+.dark {
   --background: 240 3.7% 15.9%;
   --foreground: 44 100% 97.1%;
   --primary: 359.5 48.2% 48.4%;

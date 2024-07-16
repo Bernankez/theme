@@ -32,7 +32,7 @@ ${Object.entries((style.light)).map(([key, value]) => {
   }).join("\n")}
 }
 
-:root .dark {
+.dark {
 ${Object.entries((style.dark)).map(([key, value]) => {
   return `  ${key}: ${value};`;
 }).join("\n")}
