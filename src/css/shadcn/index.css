@@ -32,13 +32,13 @@
   --accent-foreground: 0 0% 98%;
   --muted: 0 0% 20%;
   --muted-foreground: 0 0% 98%;
-  --border: 220 13% 91%;
+  --border: 0 0% 29%;
   --card: 240 3.7% 15.9%;
   --card-foreground: 44 100% 97.1%;
   --popover: 240 3.7% 15.9%;
   --popover-foreground: 44 100% 97.1%;
   --destructive: 358.1 84% 63.3%;
   --destructive-foreground: 0 0% 100%;
-  --input: 220 13% 91%;
+  --input: 0 0% 29%;
   --ring: 359.5 48.2% 48.4%;
 }
