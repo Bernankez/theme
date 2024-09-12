@@ -34,7 +34,7 @@ ${Object.entries((style.light)).map(([key, value]) => {
 
 .dark {
 ${Object.entries((style.dark)).map(([key, value]) => {
-  return `  ${key}: ${value};`;
-}).join("\n")}
+    return `  ${key}: ${value};`;
+  }).join("\n")}
 }`;
 }

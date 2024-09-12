@@ -1,5 +1,5 @@
-import { normalize } from "pathe";
 import { ensureDirSync, writeFileSync } from "fs-extra";
+import { normalize } from "pathe";
 
 export async function writeCode(filePath: string, code: string) {
   // get dirpath
